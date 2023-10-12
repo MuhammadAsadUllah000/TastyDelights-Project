@@ -22,6 +22,8 @@ body{
     line-height: 1.5rem;
     color: #777;
     margin: .5rem;
+    
+    
 }
 
 
@@ -30,11 +32,13 @@ body{
     background-image:linear-gradient(to right bottom,#ffd900b0,#e6b800cc),url(/Images/hero-image.jpg) ;
     background-size: cover;
     background-position: top;
+    position: relative;
+    
     
 }
 
 
-.logo{
+.header-logo{
     position: absolute;
     top: 1rem;
     left: 1rem;
@@ -46,5 +50,72 @@ body{
     background-size: cover;
     height: 8rem;
     width: 8rem;
+}
+
+.header-text-box{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-transform: uppercase;
+    line-height: 4.5rem;
 
 }
+
+.header-heading-first{
+    display: block;
+    color: #704214;
+    font-weight: 900;
+    letter-spacing: 1rem;
+    font-size: 3.8rem;
+    animation: heading-first .8s ease-out;
+    
+}
+.header-heading-second{
+    display: block;
+    color: #704214;
+    letter-spacing: .8rem;
+    font-weight: 800;
+    font-size: 3.5rem;
+    animation: heading-second .8s ease-out;
+}
+
+
+@keyframes heading-first{
+    0%{
+        transform: translateX(-50px);
+        opacity: 0;
+    }
+
+    80%{
+        transform: translateX(20px);
+        opacity: 1;
+    }
+
+    100%{
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+
+@keyframes heading-second{
+    0%{
+        transform: translateX(50px);
+        opacity: 0;
+    }
+
+    80%{
+        transform: translateX(-20px);
+        opacity: 1;
+    }
+
+    100%{
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+/* button */
+
+

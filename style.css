@@ -3,6 +3,13 @@ Gold/Yellow: #FFD700;
 Dark Gold/Yellow: #E6B800; */
 /* text color
 Light Golden/Yellow:#704214; */
+.row {
+  max-width: 114rem;
+  background-color: #eee;
+  margin: 0 auto; }
+  .row:not(:last-child) {
+    margin-bottom: 8rem; }
+
 * {
   margin: 0;
   padding: 0;
@@ -49,7 +56,7 @@ body {
   color: #704214;
   font-weight: 900;
   letter-spacing: 1rem;
-  font-size: 3.8rem;
+  font-size: 3.5rem;
   animation: heading-first .8s ease-out; }
 
 .header-heading-second {

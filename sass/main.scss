@@ -1,6 +1,7 @@
 
-@import "components/grid";
 @import "components/variables";
+@import "components/grid";
+
 
 
 
@@ -73,7 +74,7 @@ body{
     color: $color-dark-brown;
     font-weight: 900;
     letter-spacing: 1rem;
-    font-size: 3.8rem;
+    font-size: 3.5rem;
     animation: heading-first .8s ease-out;
     
 }

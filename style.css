@@ -57,8 +57,14 @@ body{
     top: 50%;
     left: 50%;
     transform: translate(-50%,-50%);
+    text-align: center;
+
+}
+.header-heading-box{
     text-transform: uppercase;
-    line-height: 4.5rem;
+    margin-bottom: 3rem;
+    line-height: 5rem;
+
 
 }
 
@@ -76,7 +82,7 @@ body{
     color: #704214;
     letter-spacing: .8rem;
     font-weight: 800;
-    font-size: 3.5rem;
+    font-size: 3rem;
     animation: heading-second .8s ease-out;
 }
 
@@ -117,5 +123,31 @@ body{
 }
 
 /* button */
+
+.button:link,
+.button:visited{
+    text-decoration: none;
+    padding: 1.5rem 3rem;
+    display: inline-block;
+    text-transform: uppercase;
+    transition: all .2s;
+}
+
+.button:hover{
+    transform: translateY(-4px);
+}
+
+.button:active{
+    transform: translateY(1px);
+}
+
+.button-brown{
+    background-color: #704214;
+    color:#FFD700;
+    border-radius: 100px;
+
+}
+
+
 
 

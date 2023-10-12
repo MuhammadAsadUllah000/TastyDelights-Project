@@ -1,0 +1,14 @@
+{
+  "name": "tastydelights-project",
+  "version": "1.0.0",
+  "description": "landing page for tastydelights.com",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Muhammad Asad Ullah",
+  "license": "ISC",
+  "devDependencies": {
+    "node-sass": "^9.0.0"
+  }
+}

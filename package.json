@@ -4,7 +4,7 @@
   "description": "landing page for tastydelights.com",
   "main": "index.js",
   "scripts": {
-    "compile:sass":"node-sass sass/main.scss style.css"
+    "compile:sass":"node-sass sass/main.scss style.css -w"
   },
   "author": "Muhammad Asad Ullah",
   "license": "ISC",

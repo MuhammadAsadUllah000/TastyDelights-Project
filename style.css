@@ -131,10 +131,12 @@ body{
     display: inline-block;
     text-transform: uppercase;
     transition: all .2s;
+    position: relative;
 }
 
 .button:hover{
     transform: translateY(-4px);
+    box-shadow: 0 2rem 3rem rgba(0, 0, 0, .2);
 }
 
 .button:active{
@@ -148,6 +150,46 @@ body{
 
 }
 
+.button::after{
+    content: "";
+    display: inline-block;
+    height: 100%;
+    width: 100%;
+    border-radius: 100px;
+    transition: all .6s;
+}
+
+.button-brown::after{
+    background-color: #704214;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
+
+.button:hover:after{
+    transform: scaleX(1.2) scaleY(1.5);
+    opacity: 0;
+}
+
+
+.button-animation{
+    animation: button-animation .9s ease-out .2s;
+    animation-fill-mode: backwards;
+}
+
+@keyframes button-animation{
+    0%{
+        transform: translateY(80px);
+        opacity: 0;
+    }
+
+    100%{
+        transform: translateY(0);
+        opacity: 1;
+    }
+
+}
 
 
 

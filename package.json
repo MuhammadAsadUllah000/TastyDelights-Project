@@ -4,7 +4,7 @@
   "description": "landing page for tastydelights.com",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "compile:sass":"node-sass sass/main.scss style.css"
   },
   "author": "Muhammad Asad Ullah",
   "license": "ISC",

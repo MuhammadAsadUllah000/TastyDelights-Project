@@ -1,0 +1,190 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body{
+    font-size: 1.3rem;
+    font-family: "lato", sans-serif;
+    font-weight: 400;
+    line-height: 1.5rem;
+    color: #777;
+    margin: .5rem;
+    
+    
+} 
+
+
+.header{
+    height: 95vh;
+    background-image:linear-gradient(to right bottom,#ffd900b0,#e6b800cc),url(/Images/hero-image.jpg) ;
+    background-size: cover;
+    background-position: top;
+    position: relative;
+
+    &-logo{
+        position: absolute;
+        top: 1rem;
+        left: 1rem;
+        
+    }
+    
+    &-logo-box{
+        background-image: url(/Images/logo.png);
+        background-size: cover;
+        height: 8rem;
+        width: 8rem;
+    }
+    
+    
+}
+
+
+
+
+.header-text-box{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+}
+
+.header-heading-box{
+    text-transform: uppercase;
+    margin-bottom: 3rem;
+    line-height: 5rem;
+
+    
+}
+
+.header-heading-first{
+    display: block;
+    color: $color-dark-brown;
+    font-weight: 900;
+    letter-spacing: 1rem;
+    font-size: 3.5rem;
+    animation: heading-first .8s ease-out;
+    
+}
+
+.header-heading-second{
+    display: block;
+    color: $color-dark-brown;
+    letter-spacing: .8rem;
+    font-weight: 800;
+    font-size: 3rem;
+    animation: heading-second .8s ease-out;
+}
+
+@keyframes heading-first{
+    0%{
+        transform: translateX(-50px);
+        opacity: 0;
+    }
+
+    80%{
+        transform: translateX(20px);
+        opacity: 1;
+    }
+
+    100%{
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+
+@keyframes heading-second{
+    0%{
+        transform: translateX(50px);
+        opacity: 0;
+    }
+
+    80%{
+        transform: translateX(-20px);
+        opacity: 1;
+    }
+
+    100%{
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+/* button */
+
+.button{
+
+    &:link,
+    &:visited{
+    text-decoration: none;
+    padding: 1.5rem 3rem;
+    display: inline-block;
+    text-transform: uppercase;
+    transition: all .2s;
+    position: relative;
+}
+
+&:hover{
+    transform: translateY(-4px);
+    box-shadow: 0 2rem 3rem rgba(0, 0, 0, .2);
+}
+
+&:active{
+    transform: translateY(1px);
+}
+
+&-brown{
+    background-color: $color-dark-brown;
+    color:$color-primary-light;
+    border-radius: 100px;
+
+}
+
+&::after{
+    content: "";
+    display: inline-block;
+    height: 100%;
+    width: 100%;
+    border-radius: 100px;
+    transition: all .6s;
+}
+
+&-brown::after{
+    background-color: $color-dark-brown;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
+
+&:hover:after{
+    transform: scaleX(1.2) scaleY(1.5);
+    opacity: 0;
+}
+
+
+&-animation{
+    animation: button-animation .9s ease-out .2s;
+    animation-fill-mode: backwards;
+}
+
+}
+
+
+
+@keyframes button-animation{
+    0%{
+        transform: translateY(80px);
+        opacity: 0;
+    }
+
+    100%{
+        transform: translateY(0);
+        opacity: 1;
+    }
+
+}

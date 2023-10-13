@@ -216,3 +216,28 @@ body {
 .button-text:active {
   transform: translateY(-1px);
   box-shadow: 0 2rem 3rem rgba(0, 0, 0, 0.2); }
+
+.composition {
+  position: relative; }
+  .composition-photo {
+    width: 50%;
+    box-shadow: 0 1.5rem 2rem rgba(0, 0, 0, 0.15);
+    position: absolute;
+    transition: all .3s; }
+    .composition-photo-p1 {
+      top: -2rem;
+      left: 0;
+      z-index: 10; }
+    .composition-photo-p2 {
+      top: 2rem;
+      right: 20%;
+      z-index: 20; }
+    .composition-photo-p3 {
+      top: 10rem;
+      left: 15%;
+      z-index: 30; }
+    .composition-photo:hover {
+      transform: scale(1.1);
+      outline: 5px solid #FFD700;
+      box-shadow: 0 2.5rem 2rem rgba(0, 0, 0, 0.3);
+      z-index: 40; }

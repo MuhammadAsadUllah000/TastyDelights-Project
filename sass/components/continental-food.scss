@@ -58,11 +58,13 @@
 
 .composition{
     position: relative;
+    transition: all .2s;
 
     &-photo{
         width: 50%;
         box-shadow: 0 1.5rem 2rem rgba($color: #000000, $alpha: .15);
         position: absolute;
+        outline-offset: 1rem;
         transition: all .3s;
         
 
@@ -90,10 +92,14 @@
 
         &:hover{
             transform: scale(1.1);
-            outline: 5px solid $color-primary-light;
+            outline: .5rem solid $color-primary-light;
             box-shadow: 0 2.5rem 2rem rgba($color: #000000, $alpha: .3);
             z-index: 40;
         }
+    }
+
+    &:hover &-photo:not(:hover){
+        transform: scale(.80);
     }
     
 }

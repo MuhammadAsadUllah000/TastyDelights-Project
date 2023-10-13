@@ -218,11 +218,13 @@ body {
   box-shadow: 0 2rem 3rem rgba(0, 0, 0, 0.2); }
 
 .composition {
-  position: relative; }
+  position: relative;
+  transition: all .2s; }
   .composition-photo {
     width: 50%;
     box-shadow: 0 1.5rem 2rem rgba(0, 0, 0, 0.15);
     position: absolute;
+    outline-offset: 1rem;
     transition: all .3s; }
     .composition-photo-p1 {
       top: -2rem;
@@ -238,6 +240,8 @@ body {
       z-index: 30; }
     .composition-photo:hover {
       transform: scale(1.1);
-      outline: 5px solid #FFD700;
+      outline: 0.5rem solid #FFD700;
       box-shadow: 0 2.5rem 2rem rgba(0, 0, 0, 0.3);
       z-index: 40; }
+  .composition:hover .composition-photo:not(:hover) {
+    transform: scale(0.8); }

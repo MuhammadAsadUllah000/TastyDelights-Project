@@ -49,7 +49,8 @@ body {
   background-image: linear-gradient(to right bottom, #ffd900b0, #e6b800cc), url(/Images/hero-image.jpg);
   background-size: cover;
   background-position: top;
-  position: relative; }
+  position: relative;
+  clip-path: polygon(0 0, 100% 0, 100% 78vh, 0 100%); }
   .header-logo {
     position: absolute;
     top: 1rem;

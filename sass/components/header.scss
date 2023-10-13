@@ -23,6 +23,7 @@ body{
     background-size: cover;
     background-position: top;
     position: relative;
+    clip-path: polygon(0 0,100% 0,100% 78vh,0 100%); 
 
     &-logo{
         position: absolute;

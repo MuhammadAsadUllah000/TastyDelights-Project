@@ -198,16 +198,17 @@ body {
 
 .button-text:link, .button-text:visited {
   text-decoration: none;
-  color: #FFD700;
+  color: #704214;
   font-size: 1.5rem;
   font-weight: 600;
-  border-bottom: 1px solid #FFD700;
+  border-bottom: 1px solid #704214;
   padding: .5rem 0;
   display: inline-block;
   transition: all .2s; }
 
 .button-text:hover {
   background-color: #704214;
+  color: #FFD700;
   transform: translateY(-3px);
   box-shadow: 0 2rem 3rem rgba(0, 0, 0, 0.15);
   border-bottom: none; }

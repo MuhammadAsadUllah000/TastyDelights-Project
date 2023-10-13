@@ -30,16 +30,17 @@
     &:link,
     &:visited{
         text-decoration: none;
-    color: $color-primary-light;
+    color: $color-dark-brown;
     font-size: 1.5rem;
     font-weight: 600;
-    border-bottom: 1px solid $color-primary-light;
+    border-bottom: 1px solid $color-dark-brown;
     padding: .5rem 0;
     display: inline-block;
     transition: all .2s; }
 
     &:hover{
         background-color: $color-dark-brown;
+        color: $color-primary-light;
         transform: translateY(-3px);
         box-shadow: 0 2rem 3rem rgba($color: #000000, $alpha: .15);
         border-bottom: none;

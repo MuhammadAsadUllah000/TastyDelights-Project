@@ -2,6 +2,28 @@
     padding: 15rem 0;
     background-color: $light-gray;
     margin-top: -25vh;
+    
+
+    
+
+    
+}
+
+.continental-food-heading{
+    margin-bottom: 1rem;
+    font-weight: 600;
+    color: #777;
+    text-transform: uppercase;
+    
+}
+
+
+.continental-food-paragrapgh{
+
+    &:not(:last-child) {
+        margin-bottom: 1rem;
+    }
+
 }
 
 

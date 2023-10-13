@@ -29,6 +29,16 @@ Light Golden/Yellow:#704214; */
   .row .col-3-of-4 {
     width: calc(3*((100% - 3*6rem) /4) + 2*6rem); }
 
+.heading-secondary {
+  text-align: center;
+  font-size: 2rem;
+  text-transform: uppercase;
+  font-weight: 700;
+  letter-spacing: .1rem;
+  background-image: linear-gradient(to right, #FFD700, #E6B800);
+  -webkit-background-clip: text;
+  color: transparent; }
+
 * {
   margin: 0;
   padding: 0;
@@ -162,6 +172,6 @@ body {
     opacity: 1; } }
 
 .continental-food {
-  height: 50rem;
+  padding: 15rem 0;
   background-color: #eee;
   margin-top: -25vh; }

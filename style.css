@@ -5,7 +5,6 @@ Dark Gold/Yellow: #E6B800; */
 Light Golden/Yellow:#704214; */
 .row {
   max-width: 114rem;
-  background-color: #eee;
   margin: 0 auto; }
   .row:not(:last-child) {
     margin-bottom: 8rem; }
@@ -14,7 +13,6 @@ Light Golden/Yellow:#704214; */
     display: table;
     clear: both; }
   .row [class^="col-"] {
-    background-color: #704214;
     float: left; }
     .row [class^="col-"]:not(:last-child) {
       margin-right: 6rem; }
@@ -162,3 +160,8 @@ body {
   100% {
     transform: translateY(0);
     opacity: 1; } }
+
+.continental-food {
+  height: 50rem;
+  background-color: #eee;
+  margin-top: -25vh; }

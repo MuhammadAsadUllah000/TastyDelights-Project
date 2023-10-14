@@ -1,7 +1,15 @@
-.feature{
+.feature-section{
     padding: 15rem 0;
     background-image:linear-gradient(to right bottom,rgba($color-primary-light,.9),rgba($color-primary-dark,.9)), url(/Images/feature-image.jpg);
     background-size: cover;
+    margin-top: -6.5rem;
+
+    transform: skewY(-7deg);
+
+    &>*{
+        transform: skewY(7deg);
+    }
+
 }
 
 
@@ -13,7 +21,7 @@
     transition: all .4s;
 
     &:hover{
-        transform: scale(1.2);
+        transform: translateY(-1.5rem) scale(1.2);
     }
 }
 

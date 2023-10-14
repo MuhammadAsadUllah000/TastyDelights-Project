@@ -1,17 +1,43 @@
 .food-section{
     background-color: $light-gray;
-    padding: 20rem 0;
+    padding: 40rem 0;
     margin-top: -6.5rem;
 }
 
-.food-box{
-    background-color: #fff;
+.card{
+    perspective: 150rem;
+    position: relative;
     height: 40rem;
-    transition: all .5s;
 
-    &:hover{
+    &-side{
+        background-color: #fff;
+        color: #777;
+        height: 40rem; 
+        transition: all .5s;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        backface-visibility: hidden;
+
+        &-front{
+            background-color: greenyellow;
+        }
+
+
+        &-back{
+            background-color: orangered;
+            transform: rotatey(180deg);
+        }
+    }
+
+    
+    &:hover &-side-front{
         transform: rotatey(180deg);
-        background-color: orangered;
+    }
+
+    &:hover &-side-back{
+        transform: rotatey(0);
     }
 
 }

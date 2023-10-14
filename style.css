@@ -85,6 +85,14 @@ Light Golden/Yellow:#704214; */
   padding: 20rem 0;
   margin-top: -6.5rem; }
 
+.food-box {
+  background-color: #fff;
+  height: 40rem;
+  transition: all .5s; }
+  .food-box:hover {
+    transform: rotatey(180deg);
+    background-color: orangered; }
+
 * {
   margin: 0;
   padding: 0;

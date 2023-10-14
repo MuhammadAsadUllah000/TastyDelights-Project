@@ -1,3 +1,15 @@
 .feature{
-    
+    padding: 20rem 0;
+    background-image:linear-gradient(to right bottom,rgba($color-primary-light,.9),rgba($color-primary-dark,.9)), url(/Images/feature-image.jpg);
+    background-size: cover;
+}
+
+
+.feature-box{
+    background-color: $light-gray;
+    padding: 2rem 1rem;
+}
+
+.font-size{
+    font-size: 5rem;
 }

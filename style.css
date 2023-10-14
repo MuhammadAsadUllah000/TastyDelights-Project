@@ -82,21 +82,23 @@ Light Golden/Yellow:#704214; */
 
 .food-section {
   background-color: #eee;
-  padding: 40rem 0;
+  padding: 20rem 0 15rem 0;
   margin-top: -6.5rem; }
 
 .card {
   perspective: 150rem;
   position: relative;
-  height: 40rem; }
+  height: 43rem; }
   .card-side {
-    height: 40rem;
+    height: 43rem;
     transition: all .8s ease;
     position: absolute;
     top: 0;
     left: 0;
     width: 100%;
-    backface-visibility: hidden; }
+    backface-visibility: hidden;
+    border-radius: 3px;
+    overflow: hidden; }
     .card-side-front {
       background-color: #fff; }
     .card-side-back {
@@ -107,6 +109,23 @@ Light Golden/Yellow:#704214; */
     transform: rotatey(-180deg); }
   .card:hover .card-side-back {
     transform: rotatey(0); }
+  .card-image {
+    height: 15rem;
+    background-size: cover;
+    background-blend-mode: screen;
+    clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%); }
+    .card-image-1 {
+      background-image: linear-gradient(to right bottom, rgba(255, 215, 0, 0.85), rgba(230, 184, 0, 0.85)), url(/Images/food-1.jpg); }
+  .card-heading {
+    color: #fff;
+    font-size: 1.5rem;
+    font-weight: 500;
+    text-transform: uppercase;
+    position: absolute;
+    top: 10rem;
+    right: 2rem;
+    text-align: right;
+    background-image: linear-gradient(to right bottom, rgba(255, 215, 0, 0.8), rgba(230, 184, 0, 0.8)); }
 
 * {
   margin: 0;

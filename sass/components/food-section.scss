@@ -1,25 +1,29 @@
 .food-section{
     background-color: $light-gray;
-    padding: 40rem 0;
+    padding: 20rem 0 15rem 0;
     margin-top: -6.5rem;
 }
 
 .card{
     perspective: 150rem;
     position: relative;
-    height: 40rem;
+    height: 43rem;
 
     &-side{
-        height: 40rem; 
+        height: 43rem; 
         transition: all .8s ease;
         position: absolute;
         top: 0;
         left: 0;
         width: 100%;
         backface-visibility: hidden;
+        border-radius: 3px;
+        overflow: hidden;
 
         &-front{
             background-color: #fff;
+
+            
         }
 
 
@@ -40,6 +44,31 @@
 
     &:hover &-side-back{
         transform: rotatey(0);
+    }
+
+    &-image {
+        height: 15rem;
+        background-size: cover;
+        background-blend-mode: screen;
+
+        clip-path: polygon(0 0,100% 0,100% 85%,0 100%);
+
+        &-1{
+            background-image: linear-gradient(to right bottom, rgba($color-primary-light,.85),rgba($color-primary-dark,.85)),url(/Images/food-1.jpg);
+        }
+        
+    }
+
+    &-heading{
+        color: #fff;
+        font-size: 1.5rem;
+        font-weight: 500;
+        text-transform: uppercase;
+        position: absolute;
+        top: 10rem;
+        right: 2rem;
+        text-align: right;
+        background-image: linear-gradient(to right bottom, rgba($color-primary-light,.8), rgba($color-primary-dark,.8));
     }
 
 }

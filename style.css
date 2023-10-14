@@ -118,14 +118,18 @@ Light Golden/Yellow:#704214; */
       background-image: linear-gradient(to right bottom, rgba(255, 215, 0, 0.85), rgba(230, 184, 0, 0.85)), url(/Images/food-1.jpg); }
   .card-heading {
     color: #fff;
-    font-size: 1.5rem;
-    font-weight: 500;
+    font-size: 2rem;
+    font-weight: 300;
     text-transform: uppercase;
     position: absolute;
     top: 10rem;
-    right: 2rem;
+    right: 1.5rem;
     text-align: right;
-    background-image: linear-gradient(to right bottom, rgba(255, 215, 0, 0.8), rgba(230, 184, 0, 0.8)); }
+    width: 70%; }
+  .card-heading-span {
+    padding: 1rem 1.5rem; }
+    .card-heading-span-1 {
+      background-image: linear-gradient(to right bottom, rgba(255, 215, 0, 0.8), rgba(230, 184, 0, 0.8)); }
 
 * {
   margin: 0;

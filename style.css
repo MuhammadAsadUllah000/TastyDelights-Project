@@ -90,22 +90,21 @@ Light Golden/Yellow:#704214; */
   position: relative;
   height: 40rem; }
   .card-side {
-    background-color: #fff;
-    color: #777;
     height: 40rem;
-    transition: all .5s;
+    transition: all .8s ease;
     position: absolute;
     top: 0;
     left: 0;
     width: 100%;
     backface-visibility: hidden; }
     .card-side-front {
-      background-color: greenyellow; }
+      background-color: #fff; }
     .card-side-back {
-      background-color: orangered;
       transform: rotatey(180deg); }
+      .card-side-back-2 {
+        background-image: linear-gradient(to right bottom, #FFD700, #E6B800); }
   .card:hover .card-side-front {
-    transform: rotatey(180deg); }
+    transform: rotatey(-180deg); }
   .card:hover .card-side-back {
     transform: rotatey(0); }
 

@@ -6,6 +6,12 @@ Light Golden/Yellow:#704214; */
 .u-margin-bottom {
   margin-bottom: 5rem; }
 
+.u-margin-bottom-medium {
+  margin-bottom: 3rem; }
+
+.u-margin-bottom-small {
+  margin-bottom: 2rem; }
+
 .row {
   max-width: 114rem;
   margin: 0 auto; }
@@ -57,7 +63,9 @@ Light Golden/Yellow:#704214; */
 
 .feature-box {
   background-color: #eee;
-  padding: 2rem 1rem; }
+  padding: 2rem 1.5rem;
+  text-align: center;
+  color: #704214; }
 
 .font-size {
   font-size: 5rem; }

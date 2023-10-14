@@ -1,5 +1,5 @@
 .feature{
-    padding: 20rem 0;
+    padding: 15rem 0;
     background-image:linear-gradient(to right bottom,rgba($color-primary-light,.9),rgba($color-primary-dark,.9)), url(/Images/feature-image.jpg);
     background-size: cover;
 }
@@ -10,8 +10,20 @@
     padding: 2rem 1.5rem;
     text-align: center;
     color: $color-dark-brown;
+    transition: all .4s;
+
+    &:hover{
+        transform: scale(1.2);
+    }
 }
 
-.font-size{
+.feature-icon{
     font-size: 5rem;
+    background-image: linear-gradient(to right,$color-primary-light,$color-primary-dark);
+    -webkit-background-clip: text;
+    color: transparent;
 }
+
+// .paragraph{
+//     font-size: 1.3rem;
+// }

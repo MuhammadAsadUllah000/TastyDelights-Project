@@ -103,8 +103,12 @@ Light Golden/Yellow:#704214; */
       background-color: #fff; }
     .card-side-back {
       transform: rotatey(180deg); }
+      .card-side-back-1 {
+        background-image: linear-gradient(to right bottom, #FFD700, #E6B800); }
       .card-side-back-2 {
         background-image: linear-gradient(to right bottom, #FFD700, #E6B800); }
+      .card-side-back-3 {
+        background-image: linear-gradient(to right bottom, #FF6347, #CC2929); }
   .card:hover .card-side-front {
     transform: rotatey(-180deg); }
   .card:hover .card-side-back {
@@ -117,6 +121,8 @@ Light Golden/Yellow:#704214; */
     -webkit-clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%); }
     .card-image-1 {
       background-image: linear-gradient(to right bottom, rgba(255, 215, 0, 0.85), rgba(230, 184, 0, 0.85)), url(/Images/food-1.jpg); }
+    .card-image-3 {
+      background-image: linear-gradient(to right bottom, rgba(255, 99, 71, 0.9), rgba(204, 41, 41, 0.9)), url(/Images/food-3.jpg); }
   .card-heading {
     color: #fff;
     font-size: 2rem;
@@ -149,12 +155,14 @@ Light Golden/Yellow:#704214; */
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    text-transform: uppercase; }
+    text-transform: uppercase;
+    text-align: center; }
   .card-price-box {
     text-align: center;
     margin-bottom: 6rem; }
   .card-price-only {
     font-size: 2rem;
+    font-weight: 100;
     margin-bottom: 3rem; }
   .card-price-value {
     font-size: 4rem;

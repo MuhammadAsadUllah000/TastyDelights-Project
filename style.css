@@ -106,7 +106,7 @@ Light Golden/Yellow:#704214; */
       .card-side-back-1 {
         background-image: linear-gradient(to right bottom, #FFD700, #E6B800); }
       .card-side-back-2 {
-        background-image: linear-gradient(to right bottom, #FFD700, #E6B800); }
+        background-image: linear-gradient(to right bottom, #00A86B, #228B22); }
       .card-side-back-3 {
         background-image: linear-gradient(to right bottom, #FF6347, #CC2929); }
   .card:hover .card-side-front {
@@ -121,6 +121,8 @@ Light Golden/Yellow:#704214; */
     -webkit-clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%); }
     .card-image-1 {
       background-image: linear-gradient(to right bottom, rgba(255, 215, 0, 0.85), rgba(230, 184, 0, 0.85)), url(/Images/food-1.jpg); }
+    .card-image-2 {
+      background-image: linear-gradient(to right bottom, rgba(0, 168, 107, 0.9), rgba(34, 139, 34, 0.9)), url(/Images/food-2.jpg); }
     .card-image-3 {
       background-image: linear-gradient(to right bottom, rgba(255, 99, 71, 0.9), rgba(204, 41, 41, 0.9)), url(/Images/food-3.jpg); }
   .card-heading {
@@ -138,8 +140,12 @@ Light Golden/Yellow:#704214; */
     box-decoration-break: clone; }
     .card-heading-span-1 {
       background-image: linear-gradient(to right bottom, rgba(255, 215, 0, 0.8), rgba(230, 184, 0, 0.8)); }
+    .card-heading-span-2 {
+      background-image: linear-gradient(to right bottom, rgba(0, 168, 107, 0.8), rgba(34, 139, 34, 0.8)); }
+    .card-heading-span-3 {
+      background-image: linear-gradient(to right bottom, rgba(255, 99, 71, 0.8), rgba(204, 41, 41, 0.8)); }
   .card-details {
-    color: #FFD700;
+    color: #777;
     font-size: 1.3rem;
     text-align: center;
     padding: 2rem; }
@@ -149,7 +155,7 @@ Light Golden/Yellow:#704214; */
         list-style: none;
         padding: 1rem; }
         .card-details ul li:not(:last-child) {
-          border-bottom: 1px solid #704214; }
+          border-bottom: 1px solid #eee; }
   .card-CTA {
     position: absolute;
     top: 50%;

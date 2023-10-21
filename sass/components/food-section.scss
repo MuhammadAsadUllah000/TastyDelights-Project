@@ -36,7 +36,7 @@
             }
 
             &-2{
-                background-image: linear-gradient(to right bottom, $color-primary-light,$color-primary-dark);
+                background-image: linear-gradient(to right bottom, $color-tertiary-light,$color-tertiary-dark);
             }
 
             &-3{
@@ -69,7 +69,8 @@
         }
 
         &-2{
-            
+            background-image:linear-gradient(to right bottom ,rgba($color-tertiary-light,.9),rgba($color-tertiary-dark,.9)), url(/Images/food-2.jpg) ;
+
 
         }
 
@@ -102,11 +103,20 @@
             background-image: linear-gradient(to right bottom, rgba($color-primary-light,.8), rgba($color-primary-dark,.8));
 
         }
+        &-2{
+            background-image: linear-gradient(to right bottom, rgba($color-tertiary-light,.8), rgba($color-tertiary-dark,.8));
+
+        }
+
+        &-3{
+            background-image: linear-gradient(to right bottom, rgba($color-secondary-light,.8), rgba($color-secondary-dark,.8));
+
+        }
     }
     
     &-details{
 
-        color: $color-primary-light;
+        color: #777;
         font-size: 1.3rem;
         text-align: center;
         padding: 2rem;
@@ -121,7 +131,7 @@
                 // margin-bottom: 1.5rem;
 
                 &:not(:last-child){
-                    border-bottom: 1px solid $color-dark-brown;
+                    border-bottom: 1px solid $light-gray;
 
                 }
                 

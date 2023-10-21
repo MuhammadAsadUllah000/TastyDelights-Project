@@ -47,11 +47,12 @@
     }
 
     &-image {
-        height: 15rem;
+        height: 18rem;
         background-size: cover;
         background-blend-mode: screen;
 
         clip-path: polygon(0 0,100% 0,100% 85%,0 100%);
+        -webkit-clip-path: polygon(0 0,100% 0,100% 85%,0 100%);
 
         &-1{
             background-image: linear-gradient(to right bottom, rgba($color-primary-light,.85),rgba($color-primary-dark,.85)),url(/Images/food-1.jpg);
@@ -68,13 +69,15 @@
         top: 10rem;
         right: 1.5rem;
         text-align: right;
-        width: 70%;
+        width: 75%;
+        
 
         
     }
 
     &-heading-span{
         padding: 1rem 1.5rem;
+        box-decoration-break: clone;
 
         &-1{
             background-image: linear-gradient(to right bottom, rgba($color-primary-light,.8), rgba($color-primary-dark,.8));

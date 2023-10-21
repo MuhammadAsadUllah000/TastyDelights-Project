@@ -46,6 +46,8 @@
         transform: rotatey(0);
     }
 
+    // front side styling
+
     &-image {
         height: 18rem;
         background-size: cover;
@@ -85,5 +87,40 @@
         }
     }
     
+    &-details{
+
+        color: $color-primary-light;
+        font-size: 1.3rem;
+        text-align: center;
+        padding: 2rem;
+        
+
+        ul{
+            display: inline-block;
+
+            li{
+                list-style: none;
+                padding: 1rem;
+                // margin-bottom: 1.5rem;
+
+                &:not(:last-child){
+                    border-bottom: 1px solid $color-dark-brown;
+
+                }
+                
+                
+                
+
+
+            }
+        }
+    }
+
+    &-CTA{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+    }
 
 }

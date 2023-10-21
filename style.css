@@ -132,6 +132,23 @@ Light Golden/Yellow:#704214; */
     box-decoration-break: clone; }
     .card-heading-span-1 {
       background-image: linear-gradient(to right bottom, rgba(255, 215, 0, 0.8), rgba(230, 184, 0, 0.8)); }
+  .card-details {
+    color: #FFD700;
+    font-size: 1.3rem;
+    text-align: center;
+    padding: 2rem; }
+    .card-details ul {
+      display: inline-block; }
+      .card-details ul li {
+        list-style: none;
+        padding: 1rem; }
+        .card-details ul li:not(:last-child) {
+          border-bottom: 1px solid #704214; }
+  .card-CTA {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); }
 
 * {
   margin: 0;

@@ -121,6 +121,26 @@
         top: 50%;
         left: 50%;
         transform: translate(-50%,-50%);
+        text-transform: uppercase;
+    }
+
+    &-price-box{
+        text-align: center;
+        margin-bottom: 6rem;
+
+
+    }
+
+    &-price-only{
+
+        font-size: 2rem;
+        margin-bottom: 3rem;
+
+    }
+
+    &-price-value{
+        font-size: 4rem;
+        font-weight: 100;
     }
 
 }

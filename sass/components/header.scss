@@ -162,6 +162,24 @@ body{
     z-index: -1;
 }
 
+&-pink{
+    background-color: $color-secondary-dark;
+    color:$color-primary-light;
+    border-radius: 100px;
+
+    &::after{
+        background-color: $color-secondary-dark;
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: -1;
+    }
+
+}
+
+
+
+
 &:hover:after{
     transform: scaleX(1.2) scaleY(1.5);
     opacity: 0;

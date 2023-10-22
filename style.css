@@ -290,6 +290,17 @@ body {
   left: 0;
   z-index: -1; }
 
+.button-pink {
+  background-color: #CC2929;
+  color: #FFD700;
+  border-radius: 100px; }
+  .button-pink::after {
+    background-color: #CC2929;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1; }
+
 .button:hover:after {
   transform: scaleX(1.2) scaleY(1.5);
   opacity: 0; }

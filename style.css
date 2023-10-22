@@ -12,6 +12,9 @@ Light Golden/Yellow:#704214; */
 .u-margin-bottom-small {
   margin-bottom: 2rem; }
 
+.u-center-text {
+  text-align: center; }
+
 .row {
   max-width: 114rem;
   margin: 0 5rem; }
